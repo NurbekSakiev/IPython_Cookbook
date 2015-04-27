@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 2
+      Hands-on Project 2-1
+
+      Author: 
+      Date:   
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 2-1</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 2-1
+      </h1>
+   </header>
+
+   <article>
+      <h2>Fahrenheit (&#176; F) to Celsius (&#176; C) converter</h2>
+      <form>
+          <fieldset>
+            <label for="hw1">
+              Enter HW1
+            </label>
+            <input type="number" id="hw1" />
+            <label for="hw2">
+              Enter HW2
+            </label>
+            <input type="number" id="hw2" />
+            <label for="hw3">
+              Enter HW3
+            </label>
+            <input type="number" id="hw3" />
+            <label for="q1">
+              Enter Q1
+            </label>
+            <input type="number" id="q1" />
+            <label for="q2">
+              Enter Q2
+            </label>
+            <input type="number" id="q2" />
+            <label for="q3">
+              Enter Q3
+            </label>
+            <input type="number" id="q3" />
+          </fieldset>
+          <fieldset>
+            <button type="button" id="button">Get My Grade</button>
+          </fieldset>
+          <fieldset>
+             <p>Your Final Grade</p>
+            <p id="cValue">&nbsp;</p>
+          </fieldset>
+     </form>
+   </article>
+   <script>
+      function convert() {
+         var hw1 = +document.getElementById("hw1").value;
+         var hw2 = +document.getElementById("hw2").value;
+         var hw3 = +document.getElementById("hw3").value;
+         var q1 = +document.getElementById("q1").value;
+         var q2 = +document.getElementById("q2").value;
+         var q3 = +document.getElementById("q3").value;
+
+         var finalGrade = (hw1+hw2+hw3+q1+q2+q3)*10/6;
+         document.getElementById("cValue").innerHTML = finalGrade;
+      }
+      document.getElementById("button").addEventListener("click", convert, false);
+   </script>
+</body>
+</html>

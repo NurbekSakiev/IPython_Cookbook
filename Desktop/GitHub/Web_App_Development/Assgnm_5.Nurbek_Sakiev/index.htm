@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 2
+      Hands-on Project 2-1
+
+      Author: 
+      Date:   
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 2-1</title>
+   <link rel="stylesheet" href="styles.css" />
+  
+</head>
+
+<body>
+   <header>
+      <h1>
+         My Grade
+      </h1>
+   </header>
+
+   <article>
+      <h2>Calculation of my average</h2>
+      <form>
+          <fieldset>
+            <label for="h1Value"> Enter HW#1  </label>
+			<input type="number" id="h1Value" />
+			<label for="h2Value"> Enter HW#2  </label>
+            <input type="number" id="h2Value" />
+			<label for="h3Value"> Enter HW#3  </label>
+            <input type="number" id="h3Value" />
+          </fieldset>
+         
+          <fieldset>
+            <label for="q1Value"> Enter Quiz#1  </label>
+			<input type="number" id="q1Value" />
+			<label for="q2Value"> Enter Quiz#2  </label>
+            <input type="number" id="q2Value" />
+			<label for="q3Value"> Enter Quiz#3  </label>
+            <input type="number" id="q3Value" />
+          </fieldset>
+
+
+		 <fieldset>
+            <button type="button" id="button">Get Final Grade</button>
+			
+            <p>Final Grade : </p>
+			<p id="gValue">&nbsp;</p>
+          </fieldset>
+     </form>
+   </article>
+   <script>
+      function convert() {
+         var h1 = +document.getElementById("h1Value").value;
+		 var h2 = +document.getElementById("h2Value").value;
+		 var h3 = +document.getElementById("h3Value").value;
+		 var q1 = +document.getElementById("q1Value").value;
+		 var q2 = +document.getElementById("q2Value").value;
+		 var q3 = +document.getElementById("q3Value").value;
+         var fgrade = Math.round((h1+h2+h3+q1+q2+q3) *10/ 6);
+         document.getElementById("gValue").innerHTML = fgrade;
+      }
+      document.getElementById("button").addEventListener("click", convert, false);
+   </script>
+</body>
+</html>

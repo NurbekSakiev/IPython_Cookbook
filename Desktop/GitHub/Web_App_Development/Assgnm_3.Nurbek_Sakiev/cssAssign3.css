@@ -1,0 +1,38 @@
+#container {
+	background-color: white;
+}
+
+#header {
+background: #53CF53;
+width: 900px;
+height: 200px;
+}
+#nav {
+background: #B8E62E;
+width: 900px;
+height: 20px;
+}
+#sidebar {
+background: #D1D163;
+width: 200px;
+height: 624px;
+float: left;
+}
+#right_sidebar {
+	background: #D1D163;
+width: 200px;
+height: 624px;
+float: left;
+}
+#main {
+background: #FFFF99;
+width: 500px;
+height: 624px;
+float: left;
+}
+#footer {
+background: #53CF53;
+width: 900px;
+height: 200px;
+clear: both;
+}

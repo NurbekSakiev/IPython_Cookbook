@@ -1,0 +1,38 @@
+.container {
+	background-color: brown;
+	margin: 8 auto;
+	width: 960px;
+}
+.navbar {
+	width: 480px;
+	float: left;
+	margin: 20px 0px;
+}
+
+.navbar li{
+	display: inline;
+	padding:10px;
+	background-color: white;
+	border-radius: 4px;
+	
+}
+.header {
+	float: left;
+	width: 480px;
+	margin: 0;
+}
+
+.primary {
+	float: left;
+	margin: 0 1.5%;
+  	width: 45%;
+}
+.secondary {
+	margin: 0 1.5%;
+  	width: 45%;
+	float: right;
+}
+.footer {
+	clear:both;
+}
+

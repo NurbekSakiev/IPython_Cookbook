@@ -1,0 +1,73 @@
+<html>
+<head>
+</head>
+<body>
+	<h1> Form Basics </h1>
+<form action="Assgnm4.php" method="post">
+	<ol>
+		<li>Name<input type="text" name="name"></li><br>
+		<li>Password<input type="password" name="password"></li>
+	</ol>
+	<ul>
+		<li>What size drink:<br>
+			<input type="radio" name = "drinksize" value = "large" checked = "checked">Large 
+			<input type="radio" name = "drinksize" value = "medium">Medium
+			<input type="radio" name = "drinksize" value = "small" >Small
+		</li><br>
+		<li>What fruit do you like? 
+			<input type="checkbox" name="fruit" value="apple"> Apple
+			<input type="checkbox" name="fruit" value="banana"> Banana
+			<input type="checkbox" name="fruit" value="orange"> Orange
+		</li><br>
+		<li>Upload Resume
+			<input type="file" name = "resume"><br>
+			<input type="submit" value="Upload">
+		</li>
+	</ul>
+
+	<input type="submit" value="Submit My Application">
+		<ul>
+			<li>Leave a Comment:
+				<textarea name="comment">I think...</textarea>
+			</li>
+		</ul>
+		<li>What Month Were You Born?
+			<select name="month">
+				<option value="January">January</option>
+				<option value="February">February</option>
+				<option value="February">March</option>
+				<option value="February">April</option>
+				<option value="February">May</option>
+				<option value="February">June</option>
+				<option value="February">July</option>
+				<option value="February">August</option>
+				<option value="February">September</option>
+				<option value="February">October</option>
+				<option value="February">November</option>
+				<option value="February">December</option>
+			</select>
+		</li>
+
+	<ul>
+		<li><label>Name: <input type="text" name="name"></label></li><br>
+		<li><label>Name: <input type="text" name="name"></label></li><br>
+		<li>What size drink:<br>
+			<input type="radio" name = "drinksize" value = "large">Large 
+			<input type="radio" name = "drinksize" value = "medium">Medium
+			<input type="radio" name = "drinksize" value = "small" >Small
+		</li><br>
+	</ul>
+
+	
+
+	<fieldset>
+		<legend>Address</legend>
+		<ul>
+			<li><label>Street: <input type="text" name="address"></label></li><br>
+			<li><label>City: <input type="text" name="city"></label></li><br>
+			<li><label>Zip Code: <input type="text" name="zip"></label></li>
+		</ul>
+	</fieldset>
+</form>
+</body>
+</html>

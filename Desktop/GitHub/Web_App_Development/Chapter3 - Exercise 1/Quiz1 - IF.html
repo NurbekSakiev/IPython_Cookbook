@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>World Capitals</title>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+function scoreQuestion1(answer) {
+     if (answer == "a")
+          window.alert("Correct Answer");
+     if (answer == "b")
+          window.alert("Incorrect Answer");
+     if (answer == "c")
+          window.alert("Incorrect Answer");
+}
+function scoreQuestion2(answer) {
+     if (answer == "a")
+          window.alert("Incorrect Answer");
+     if (answer == "b")
+          window.alert("Correct Answer");
+     if (answer == "c")
+          window.alert("Incorrect Answer");
+}
+function scoreQuestion3(answer) {
+     if (answer == "a")
+          window.alert("Incorrect Answer");
+     if (answer == "b")
+          window.alert("Incorrect Answer");
+     if (answer == "c")
+          window.alert("Correct Answer");
+}
+
+/* ]]> */
+</script>
+</head>
+<body>
+<h1>The Capitals Quiz</h1>
+<form action="">
+
+<p><b>1. The Capital of UK is : </b></p>
+<p>
+<input type="radio" name="question1" value="a" onclick="scoreQuestion1('a')" />London<br /> <!-- correct answer -->
+<input type="radio" name="question1" value="b" onclick="scoreQuestion1('b')" />Paris<br />
+<input type="radio" name="question1" value="c" onclick="scoreQuestion1('c')" />Rome
+</p>
+
+<p><b>1. The Capital of France is : </b></p>
+<p>
+<input type="radio" name="question1" value="a" onclick="scoreQuestion2('a')" />London<br /> 
+<input type="radio" name="question1" value="b" onclick="scoreQuestion2('b')" />Paris<br /> <!-- correct answer -->
+<input type="radio" name="question1" value="c" onclick="scoreQuestion2('c')" />Rome
+</p>
+
+<p><b>1. The Capital of Italy is : </b></p>
+<p>
+<input type="radio" name="question1" value="a" onclick="scoreQuestion3('a')" />London<br /> 
+<input type="radio" name="question1" value="b" onclick="scoreQuestion3('b')" />Paris<br /> 
+<input type="radio" name="question1" value="c" onclick="scoreQuestion3('c')" />Rome <!-- correct answer -->
+</p>
+
+
+
+
+
+</form>
+</body>
+</html>

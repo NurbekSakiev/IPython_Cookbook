@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Tinley Xeriscapes</title>
+   <link rel="stylesheet" media="screen and (max-device-width: 999px)" href="tinleyhand.css" />
+   <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="tinley.css" />
+  
+   <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+   <script>
+   var blanket = "images/blanket.jpg";
+   var bluestem = "images/bluestem.jpg";
+   var rugosa = "images/rugosa.jpg";
+   var flower = "images/flower.png";
+   var sample = "images/sample.png";
+   
+   function changeBGC(color){
+      document.body.style.backgroundColor=color
+   }
+   var sec = document.getElementById( 'second' );
+   
+   function changeColor(color, color2, color3){
+      document.getElementById('plantImg').src = sample;
+      document.getElementById('container').style.backgroundColor = color;
+      document.getElementById('aside').style.backgroundColor = color;
+      document.getElementById('header').style.backgroundColor = color2;
+      document.getElementById('footer').style.backgroundColor = color2;
+      document.body.style.backgroundColor=color3;
+   }
+   </script>
+   
+   
+</head>
+
+<body>
+   <a href="#" onClick="changeBGC('red')">Red</a>
+   <a href="#" onClick="changeBGC('blue')">Blue</a>
+   <a href="#" onClick="changeBGC('green')">Green</a>
+   <a href="#" onClick="changeBGC('yellow')">Yellow</a>
+
+   <a href="#" onClick="changeColor('#ff9c9f','red', '#FFE0A3')" style= "position:absolute;top:0; right:350px;">Red</a>
+   <a href="#" onClick="changeColor('#66CCFF', 'blue','#C5C5C5')" style= "position:absolute;top:0; right:310px;">Blue</a>
+   <a href="#" onClick="changeColor('#00E600', 'green', '#B8E6B8')" style= "position:absolute;top:0; right:255px;">Green</a>
+   <a href="#" onClick="changeColor('#FFFF99', 'yellow', '#D6D675')" style= "position:absolute;top:0; right:200px;">Yellow</a>
+  
+
+   <div id="container">
+     
+      <header id = 'header'>
+       
+	  </header>
+
+            
+      <aside id = 'aside'>
+         <ul>
+            <li onmouseover="document.getElementById('plantImg').src = blanket"
+               onmouseout = "document.getElementById('plantImg').src = flower">Blanket Flower</li>
+            <li onmouseover="document.getElementById('plantImg').src = rugosa"
+               onmouseout = "document.getElementById('plantImg').src = flower">Hedge Rose</li>
+            <li onmouseover="document.getElementById('plantImg').src = bluestem"
+               onmouseout = "document.getElementById('plantImg').src = flower">Little Bluestem</li>
+         </ul>
+      </aside>
+    
+      <article>
+         <figure >
+            <img src="images/flower.png" width="640" height="400" alt="" title="" id="plantImg" />
+            <figcaption>
+               
+            </figcaption>
+         </figure>
+      </article>
+    
+      <footer id = 'footer'>
+         <p>Tinley Xeriscapes &bull; Tinley Park, IL 60477</p>
+      </footer>
+   </div>
+   <script src="plants.js"></script>
+</body>
+</html>
